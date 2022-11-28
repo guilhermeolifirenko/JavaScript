@@ -1,0 +1,33 @@
+body {
+    background-color: #025E73;
+    font: normal 15pt Arial;
+}
+
+header {
+    text-align: center;
+    color: #A6BC09;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
+}
+
+section {
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.452);
+}
+
+#lista {
+    width: 150px;
+}
+
+#result {
+    margin-top: 15px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.377)
+}

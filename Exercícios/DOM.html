@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: crimson;
+        }
+
+        main {
+            background-color: rgba(206, 147, 159, 0.836);
+            border-radius: 10px;
+            text-align: justify;
+            text-align: center;
+            max-width: 1000px;
+            height: 310px;
+            margin: auto;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        #botao {
+            background-color: white;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Mexendo com DOM</h1>
+        <p id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum asperiores quam rem error sequi, voluptatibus adipisci mollitia aliquam, dolorum quas vero modi quasi alias inventore placeat saepe ipsa. Vel, quidem?</p>
+        <div id="botao">
+            <img id="imagem" src="#" alt="">
+            <p id="texto">Não Clique!</p>
+        </div>
+    </main>
+    <script>
+        /*
+        var p1 = document.getElementById('text')
+        p1.innerHTML = 'Fdc'
+        
+       var p1 = document.querySelector('p#text')
+       p1.style.background = 'white'
+       */
+
+       var a = document.getElementById('botao')
+       var img = document.getElementById('imagem')
+       var txt = document.getElementById('texto')
+       a.addEventListener('click', clicar)
+
+       function clicar() {
+        img.src = '../Imagens/socratesputaonabirita.jpeg'
+        txt.innerHTML = 'NEM FODENDO'
+       }
+    </script>
+</body>
+</html>

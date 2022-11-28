@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Digite a velocidade do carro <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="result">
+        Resultado: 
+    </div>
+
+    <script>
+        function verificar() {
+            var txtvel = document.querySelector('input#txtvel')
+            var result = document.querySelector('div#result')
+            var vel = Number(txtvel.value)
+            result.innerHTML = `<p>A sua velocidade é ${vel}</p>`
+            if (vel > 70) {
+                result.innerHTML += '<p>Você excedeu o limite de velocidade e será <strong>MULTADO</strong></p>'
+            } else {
+                result.innerHTML += '<p>Dirija sempre com cinto de segurança</p>'
+            }
+        }
+    </script>
+</body>
+</html>
